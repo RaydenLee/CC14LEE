@@ -28,7 +28,7 @@ body {
     color: var(--text-dark);
     background-color: #d4d4d0;
     padding: 40px 20px;
-    max-width: 1500px;
+    max-width: 2000px;
     margin: 0 auto;
 }
 
@@ -51,8 +51,8 @@ section:last-of-type {
 
 
 header img {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     border-radius: 16%;
     border: 4px solid var(--primary-dark);
     object-fit: cover;
@@ -98,7 +98,7 @@ nav ul {
 nav ul li a {
     color: var(--text-dark);
     text-decoration: none;
-    font-size: 0.95em;
+    font-size: 25px;
     font-weight: 500;
     position: relative;
 }
@@ -148,8 +148,8 @@ section:first-of-type a,
     display: inline-block;
     background-color: var(--primary-dark);
     color: #fff;
-    padding: 14px 32px;
-    border-radius: 30px;
+    padding: 20px 20px;
+    border-radius: 15px;
     font-size: 0.95em;
     font-weight: 500;
     text-decoration: none;
