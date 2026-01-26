@@ -204,23 +204,13 @@ section ul li {
     margin-top: 10px;
 }
 
-.certificates {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
-    max-width: 1000px;
-    margin: 40px auto;
-}
 
-.certificates img {
+#images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
     width: 200px;
-    height: 180px;
-    object-fit: contain;
-    background-color: #fff;
-    padding: 16px;
-    border-radius: 16px;
-    border: 1px solid rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certificates img:hover {
@@ -266,11 +256,5 @@ hr {
 
     header h1 {
         font-size: 1.6em;
-    }
-
-    .certificates img {
-        height: 500px;
-        width: 150px;
-        padding: 12px;
     }
 }
