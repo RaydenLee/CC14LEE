@@ -1,44 +1,273 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rayden B. Lee - Certificates</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="portfolio">
 
-            <header class="portfolio-header">
-                <div class="header-top">
-                    <img src="resume_pic/profile1.jpg" alt="Rayden B. Lee" class="profile-pic">
-                    <div class="header-text">
-                        <h1>Rayden B. Lee</h1>
-                        <h2>BS Information Technology | Major in Enterprise Resource Planning</h2>
-                        <p>Baguio City, Benguet | 0994 796 5467 | raydenlee.1105@gmail.com</p>
+            <nav class="hero-nav">
+                <div class="nav-container">
+                    <a href="index.html" class="logo">RBL</a>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="certificate.html">Certificates</a></li>
+                        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="page-header">
+                <div class="page-header-background">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
                     </div>
                 </div>
+                <div class="page-header-content">
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span>Certificates</span>
+                    </div>
+                    <h1 class="page-title">Professional Certificates</h1>
+                    <p class="page-subtitle">My professional certifications and achievements in technology and design</p>
+                </div>
+            </section>
 
-                <nav class="portfolio-nav">
-                    <ul>
-                        <li><a href="index.html"><strong>Home</strong></a></li>
-                        <li><a href="certificate.html"><strong>Certificates</strong></a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <main>
+            <main class="content-main certificates-main">
              
-                <section id="certificates">
-                    <h2>My Certificates</h2>
-                    <div class="certificate-images">
-                        <img src="resume_pic/CCNA1.jpg" alt="CCNA1" class="certificate-img">
-                        <img src="resume_pic/CCNA2.jpg" alt="CCNA2" class="certificate-img">
-                        <img src="resume_pic/BPMN.jpg" alt="BPMN" class="certificate-img">
+                <section class="content-section certificates-section" id="certificates">
+                    <div class="section-content">
+                        <div class="certificates-intro">
+                            <p class="lead-text">
+                                Throughout my academic journey, I've pursued various certifications to strengthen my technical expertise 
+                                and validate my skills in networking, business process modeling, and system design.
+                            </p>
+                        </div>
+
+                        <div class="certificates-grid">
+               
+                            <div class="certificate-card">
+                                <div class="certificate-image-wrapper">
+                                    <img src="resume_pic/CCNA1.jpg" alt="CCNA1 Certificate" class="certificate-img">
+                                    <div class="certificate-overlay">
+                                        <button class="view-btn" onclick="openModal('resume_pic/CCNA1.jpg', 'CCNA 1: Introduction to Networks')">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9M15 3V7C15 7.55228 15.4477 8 16 8H20M15 3H9M9 3V7C9 7.55228 8.55228 8 8 8H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                            <span>View Full Certificate</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="certificate-info">
+                                    <h3>CCNA 1: Introduction to Networks</h3>
+                                    <p class="certificate-issuer">Cisco Networking Academy</p>
+                                    <p class="certificate-description">
+                                        Foundational certification covering network fundamentals, IP addressing, 
+                                        network security basics, and essential networking concepts.
+                                    </p>
+                                    <div class="certificate-tags">
+                                        <span class="tag">Networking</span>
+                                        <span class="tag">Cisco</span>
+                                        <span class="tag">IP Addressing</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="certificate-card">
+                                <div class="certificate-image-wrapper">
+                                    <img src="resume_pic/CCNA2.jpg" alt="CCNA2 Certificate" class="certificate-img">
+                                    <div class="certificate-overlay">
+                                        <button class="view-btn" onclick="openModal('resume_pic/CCNA2.jpg', 'CCNA 2: Switching, Routing, and Wireless Essentials')">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9M15 3V7C15 7.55228 15.4477 8 16 8H20M15 3H9M9 3V7C9 7.55228 8.55228 8 8 8H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                            <span>View Full Certificate</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="certificate-info">
+                                    <h3>CCNA 2: Switching, Routing, and Wireless Essentials</h3>
+                                    <p class="certificate-issuer">Cisco Networking Academy</p>
+                                    <p class="certificate-description">
+                                        Advanced networking certification covering VLANs, routing protocols, 
+                                        wireless networking, and network troubleshooting.
+                                    </p>
+                                    <div class="certificate-tags">
+                                        <span class="tag">Routing</span>
+                                        <span class="tag">Switching</span>
+                                        <span class="tag">Wireless</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="certificate-card">
+                                <div class="certificate-image-wrapper">
+                                    <img src="resume_pic/BPMN.jpg" alt="BPMN Certificate" class="certificate-img">
+                                    <div class="certificate-overlay">
+                                        <button class="view-btn" onclick="openModal('resume_pic/BPMN.jpg', 'Business Process Model and Notation (BPMN)')">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9M15 3V7C15 7.55228 15.4477 8 16 8H20M15 3H9M9 3V7C9 7.55228 8.55228 8 8 8H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                            <span>View Full Certificate</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="certificate-info">
+                                    <h3>Business Process Model and Notation (BPMN)</h3>
+                                    <p class="certificate-issuer">Professional Certification</p>
+                                    <p class="certificate-description">
+                                        Specialized certification in business process modeling using BPMN standards 
+                                        for workflow analysis and process optimization.
+                                    </p>
+                                    <div class="certificate-tags">
+                                        <span class="tag">BPMN</span>
+                                        <span class="tag">Process Design</span>
+                                        <span class="tag">Workflow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificates-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M28 6.66667H4C2.89543 6.66667 2 7.5621 2 8.66667V23.3333C2 24.4379 2.89543 25.3333 4 25.3333H28C29.1046 25.3333 30 24.4379 30 23.3333V8.66667C30 7.5621 29.1046 6.66667 28 6.66667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 12H30M10.6667 17.3333H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Certifications Earned</div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                        <path d="M4 16L16 22L28 16M4 22L16 28L28 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Technical Skills</div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 10V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Learning Hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-cta">
+                    <div class="cta-content">
+                        <h2>Want to Know More?</h2>
+                        <p>Explore my full resume and project portfolio</p>
+                        <div class="cta-buttons">
+                            <a href="content.html" class="hero-btn hero-btn-primary">
+                                View Full Resume
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="index.html#contact" class="hero-btn hero-btn-secondary">
+                                Get In Touch
+                            </a>
+                        </div>
                     </div>
                 </section>
             </main>
 
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo">RBL</div>
+                        <p>Building innovative digital solutions through strategic systems analysis</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Navigate</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#about">About</a></li>
+                                <li><a href="index.html#work">Projects</a></li>
+                                <li><a href="content.html">Resume</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Connect</h4>
+                            <ul>
+                                <li><a href="mailto:raydenlee.1105@gmail.com">Email</a></li>
+                                <li><a href="certificate.html">Certificates</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Rayden B. Lee. All rights reserved.</p>
+                </div>
+            </footer>
         </div>
+
+        <div id="certificateModal" class="modal">
+            <div class="modal-overlay" onclick="closeModal()"></div>
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <h3 id="modalTitle"></h3>
+                    <img id="modalImage" src="" alt="Certificate">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openModal(imageSrc, title) {
+                const modal = document.getElementById('certificateModal');
+                const modalImage = document.getElementById('modalImage');
+                const modalTitle = document.getElementById('modalTitle');
+                
+                modalImage.src = imageSrc;
+                modalTitle.textContent = title;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                const modal = document.getElementById('certificateModal');
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        </script>
     </body>
 </html>
